@@ -1,9 +1,9 @@
 fun main() {
-    val ecu1 = "{{}()a[ + b] [c] ]* (2x2)}"
+    val ecu1 = ""
     val ecu2 = "{ [ a * ( c + d ) ] - 5 }"
     val ecu3 = "{ a * ( c + d ) ] - 5 }"
     val ecu4 = "{a^4 + (((ax4)}"
-    print(balanceada(ecu4))
+    print(balanceada(ecu1))
 }
 
 fun balanceada(ecuacion: String): Boolean{
@@ -23,8 +23,8 @@ fun balanceada(ecuacion: String): Boolean{
             if(signos.last()== '(' && ecuacion.get(i) == ')'){
                 signos.removeAt(signos.size-1)
             }
-                if(signos.last()== '[' && ecuacion.get(i) == ']'){
-                    signos.removeAt(signos.size-1)
+            if(signos.last()== '[' && ecuacion.get(i) == ']'){
+                signos.removeAt(signos.size-1)
             }
         }
     }
