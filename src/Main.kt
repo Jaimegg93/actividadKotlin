@@ -8,7 +8,7 @@ fun main() {
     val palabra2 = scanner.next()
 
     val r = palabras(palabra1,palabra2)
-    println("Las palabras $palabra1 y $palabra2 son anagramas: $r")
+    println("¿Las palabras $palabra1 y $palabra2 son anagramas? =  $r")
 }
 fun palabras(palabra1: String, palabra2: String): Boolean{
     if(palabra1.length != palabra2.length){
