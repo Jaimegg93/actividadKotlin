@@ -1,0 +1,1 @@
+data class Contacto(var Nombre: String, var telefono: String) {}
