@@ -53,7 +53,7 @@ class Agenda( var agenda:MutableList<Contacto>, var tamaño: Int){
         var existe: Boolean = false
 
         for(i in agenda){
-            if(i.Nombre == nombre)  existe= true
+            if(i.Nombre.lowercase() == nombre.lowercase())  existe= true
         }
         if(existe){
             println("Contacto con ese nombre ya existe")
